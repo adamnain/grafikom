@@ -356,6 +356,55 @@ void Tampilan (void)
     	glVertex2i(512, 300 - (i*30));
     }
 	glEnd();
+	
+	//batu
+	glColor3f(0.502, 0.502, 0.502);
+	glBegin(GL_POLYGON);
+    for(int i=0;i<=360;i++){
+    	float sudut = i+(PI/360);
+    	float x = 20*cos(sudut);
+    	float y = 20*sin(sudut);
+    	glVertex2f(x+630,y+140);
+    }
+    glEnd();
+    
+    glColor3f(0.412, 0.412, 0.412);
+	glBegin(GL_POLYGON);
+    for(int i=0;i<=360;i++){
+    	float sudut = i+(PI/360);
+    	float x = 25*cos(sudut);
+    	float y = 25*sin(sudut);
+    	glVertex2f(x+600,y+140);
+    }
+    glEnd();
+    
+    glColor3f(0.565, 0.933, 0.565);
+	glBegin(GL_POLYGON);
+	glVertex2i(550, 140);
+	glVertex2i(700, 140);
+	glVertex2i(640, 40);
+	glVertex2i(630, 40);
+    glEnd();
+    //akhir batu
+    
+    //cerobong asap
+    glColor3f(0.412, 0.412, 0.412);
+	glBegin(GL_POLYGON);
+    glVertex2i(900, 280);
+    glVertex2i(950, 280);
+    glVertex2i(950, 250);
+    glVertex2i(900, 250);
+    glEnd();
+    
+    glColor3f(0.502, 0.502, 0.502);
+	glBegin(GL_POLYGON);
+    glVertex2i(889, 290);
+    glVertex2i(961, 290);
+    glVertex2i(961, 270);
+    glVertex2i(889, 270);
+    glEnd();
+    //akhir cerobong asap
+    
     
     glFlush();
 }
