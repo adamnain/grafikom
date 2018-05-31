@@ -286,6 +286,58 @@ void Tampilan (void)
     
     glEnd();
     
+    //jendela rumah 1
+    glColor3f(0.678, 0.847, 0.902);
+	glBegin(GL_POLYGON);
+    glVertex2i(720, 120);
+    glVertex2i(760, 120);
+    glVertex2i(760, 60);
+    glVertex2i(720, 60);
+    glEnd();
+    
+    glColor3f(1.000, 0.871, 0.678); 
+	glLineWidth(3);
+	glBegin(GL_LINES);
+	glVertex2f(740,120);
+	glVertex2f(740,60);
+	glEnd();
+	
+	glColor3f(1.000, 0.871, 0.678); 
+	glLineWidth(3);
+	glBegin(GL_LINES);
+	glVertex2f(720,90);
+	glVertex2f(760,90);
+	glEnd();
+    
+    //akhir jendela rumah 1
+    
+    //jendela rumah 2
+    glColor3f(0.678, 0.847, 0.902);
+	glBegin(GL_POLYGON);
+    glVertex2i(773, 120);
+    glVertex2i(820, 120);
+    glVertex2i(820, 60);
+    glVertex2i(773, 60);
+    glEnd();
+    
+    glColor3f(1.000, 0.871, 0.678); 
+	glLineWidth(3);
+	glBegin(GL_LINES);
+	glVertex2f(796,120);
+	glVertex2f(796,60);
+	glEnd();
+	
+	glColor3f(1.000, 0.871, 0.678); 
+	glLineWidth(3);
+	glBegin(GL_LINES);
+	glVertex2f(773,90);
+	glVertex2f(820,90);
+	glEnd();
+    
+    //akhir jendela rumah 2
+    
+    
+    
     
     	
 	//jalan
